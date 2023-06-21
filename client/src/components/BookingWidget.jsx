@@ -28,6 +28,9 @@ const BookingWidget = ({ place }) => {
       setRedirect("/login");
       return <Navigate to={redirect} />;
     }
+    if (!checkIn && !checkOut && !phone && !numberOfGuests && !name) {
+      return alert("Please select dates");
+    }
     const data = {
       place: place._id,
       checkIn,
