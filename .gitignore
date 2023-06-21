@@ -1,0 +1,7 @@
+.idea
+api/node_modules
+client/node_modules
+api/.env
+api/uploads/*
+api/yarn-error.log
+client/.eslintrc.cjs
